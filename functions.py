@@ -40,4 +40,21 @@ class Matrix:
         return True
     
 
-    print(several_zeros_custom())
+
+
+def my_sort(my_list: [int]) -> [int]:
+
+    result = my_list.copy()
+    
+    n = len(result)
+    
+    for i in range(n):
+
+        for j in range(0, n - i - 1):
+           
+            if result[j] > result[j + 1]:
+                
+                result[j], result[j + 1] = result[j + 1], result[j]
+    
+    return result
+
